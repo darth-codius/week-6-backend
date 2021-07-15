@@ -1,5 +1,8 @@
-const express = require('express');
+const express = require("express");
+const cors = require("cors");
 const app = express();
+const items = require("./items.json");
+const helpers = require('./helpers')
 const port = process.env.PORT || 5000;
 const corsOptions = {
     origin: "*",
@@ -13,13 +16,14 @@ app.use(express.json({ limit: "50mb" }));
 app.use(cors(corsOptions));
 app.use(express.urlencoded({ limit: "50mb", extended: true }));
 
-
-app.get('/items', (req, res) => {
-    res.send("the items");
+app.get("/items", (req, res) => {
+    res.send(items);
 });
 
-app.get('/', (req, res) => {
-    res.send("it works")
+app.post("/students", (req, res) => {
+    const body = req.body
+    helpers.saveData(body)
+    res.send("Successful")
 });
 
 app.listen(port, () => {

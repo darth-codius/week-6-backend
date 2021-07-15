@@ -1,0 +1,97 @@
+[
+    {
+        "id": 1,
+        "name": "Airpods",
+        "price": 12500
+    },
+    {
+        "id": 2,
+        "name": "Earpiece",
+        "price": 500
+    },
+    {
+        "id": 3,
+        "name": "Tablet",
+        "price": 35000
+    },
+    {
+        "id": 4,
+        "name": "Charger",
+        "price": 800
+    },
+    {
+        "id": 5,
+        "name": "Cable",
+        "price": 4500
+    },
+    {
+        "id": 6,
+        "name": "Flash",
+        "price": 8000
+    },
+    {
+        "id": 8,
+        "name": "Memory card",
+        "price": 3000
+    },
+    {
+        "id": 9,
+        "name": "Hard Disk",
+        "price": 15000
+    },
+    {
+        "id": 10,
+        "name": "Oranges",
+        "price": 500
+    },
+    {
+        "id": 11,
+        "name": "Marmalade",
+        "price": 1500
+    },
+    {
+        "id": 12,
+        "name": "Margarine",
+        "price": 1000
+    },
+    {
+        "id": 13,
+        "name": "Tyre",
+        "price": 45000
+    },
+    {
+        "id": 14,
+        "name": "Keyboard",
+        "price": 2500
+    },
+    {
+        "id": 15,
+        "name": "Mouse",
+        "price": 3500
+    },
+    {
+        "id": 16,
+        "name": "Modem",
+        "price": 15000
+    },
+    {
+        "id": 17,
+        "name": "Bag",
+        "price": 5000
+    },
+    {
+        "id": 18,
+        "name": "Mouse pad",
+        "price": 2300
+    },
+    {
+        "id": 19,
+        "name": "VPN",
+        "price": 3000
+    },
+    {
+        "id": 20,
+        "name": "Camera",
+        "price": 50000
+    }
+]
