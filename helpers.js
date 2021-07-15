@@ -5,7 +5,7 @@ const saveData = (data) => {
     const list = JSON.parse(rawData);
     list.push(data);
     fs.writeFileSync(
-        path.resolve(__dirname, "student.json"),
+        "students.json",
         JSON.stringify(list, null, 2)
     );
 };
