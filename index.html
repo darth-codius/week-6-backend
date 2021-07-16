@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style.css" type="text/css" />
+        <title>Documentation</title>
+    </head>
+    <body>
+        <h1 class="title">Homepage</h1>
+        <section>
+            <div class="items-section">
+                <p>This RestAPI consists of the following endpoints</p>
+                <ul class="endpoints">
+                    <li class="item">/students</li>
+                    <li class="item">/items</li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <div class="section_students">
+                <h3 class="section_title">Students Endpoint</h3>
+                <p>
+                    This endpoints accepts a GET request and returns a list of
+                    students. The format of the response body is given below
+                </p>
+                <div class="code">
+                    <p>
+                        [ { "name": "Benjamin", "seat": 2, "class": "B" }, ... ]
+                    </p>
+                </div>
+                <br />
+                <p>
+                    This endpoints also accepts a POST request and returns a
+                    list of students which includes the newly saved information. The
+                    format of the request body is given below
+                </p>
+                <div class="code">
+                    <p>{ "name": "Benjamin", "seat": 2, "class": "B" }</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="section_items">
+                <h3 class="section_title">Items Endpoint</h3>
+                <p>
+                    This endpoints accepts a GET request and returns a list of
+                    items. The format of the response body is given below
+                </p>
+                <div class="code">
+                    <p>
+                        [ { "id": 1, "name": "Airpods", "price": 12500 }, ... ]
+                    </p>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

@@ -29,7 +29,7 @@ app.get("/items", (req, res) => {
 app.post("/students", (req, res) => {
     const body = req.body;
     helpers.saveData(body);
-    res.send("Successful");
+    res.send(helpers.getStudentsData());
 });
 
 app.get("/students", (req, res) => {
