@@ -28,6 +28,7 @@ app.get("/items", (req, res) => {
 
 app.post("/students", (req, res) => {
     const body = req.body;
+    if (helpers.isExist(body)) return res.send("User exists already");
     helpers.saveData(body);
     res.send(helpers.getStudentsData());
 });
@@ -36,6 +37,13 @@ app.get("/students", (req, res) => {
     res.json(helpers.getStudentsData());
 });
 
-app.listen(port, () => {
-    console.log(`Server started on ${port}`);
+app.delete("/students/:id", (req, res) => {
+    if (req.params.id == "1234") {
+        helpers.deleteData();
+        res.send(helpers.getStudentsData());
+    } else {
+        res.send("Id not found. cannot delete!");
+    }
 });
+
+app.listen(port);
