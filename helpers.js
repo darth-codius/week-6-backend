@@ -10,4 +10,10 @@ const saveData = (data) => {
     );
 };
 
+const getStudentsData = () =>{
+    const studentList = fs.readFileSync("students.json")
+    return JSON.parse(studentList)
+}
+
 exports.saveData = saveData;
+exports.getStudentsData = getStudentsData
