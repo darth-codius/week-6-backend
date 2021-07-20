@@ -28,7 +28,7 @@ app.get("/items", (req, res) => {
 
 app.post("/students", (req, res) => {
     const body = req.body;
-    if (helpers.isExist(body)) return res.send("User exists already");
+    if (helpers.isExist(body)) return res.sendStatus(400).send([]);
     helpers.saveData(body);
     res.send(helpers.getStudentsData());
 });
